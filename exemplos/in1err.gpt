@@ -1,0 +1,23 @@
+algoritmo idade;
+
+variáveis
+    idade : inteiro;
+    nome : literal;
+    nome : inteiro;
+fim-variáveis
+
+início
+    imprima("Digite seu nome:");
+    nome := leia();
+    imprima(nome, ", digite sua idade:");
+    idade := leia();
+    se idade >= 18 então
+        se idade < 60 então
+        imprima("adulto!");
+        senão
+        imprima("ancião", '!');
+        fim-se
+    senão
+        imprima("menor", "!");
+    fim-se
+fim
